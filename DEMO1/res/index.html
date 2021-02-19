@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet --><!-- Created with iSpring --><!-- 720 540 --><!--type flash --><!--mainFolder ../ --><!--content quiz --><!--universal -->
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="msapplication-tap-highlight" content="no" />
+	<title>HIC- Demo Quiz</title>
+	<script src="data/isplayer.js"></script>
+	<script src="lms.js"></script>
+	<style>html, body {background-color:#838689; overflow: hidden;}</style>
+</head>
+<body>
+<script>
+	(function(){
+		var ldr = new ispring.quiz.loader.CombinedQuizLoaderWithAPI((function(start){
+	var params = {
+		quizId: "",
+		flags: 3,
+		resumeMode: "prompt",  
+		tincan:
+		{
+			endPoint: "",
+			auth:
+			{
+				type: "",
+				key: "",
+				login: "",
+				password: "",
+				name: "",
+				email: ""
+			},
+			i18n:{
+}
+		},
+		scorm2004:
+		{
+			edition: ""
+		}
+	};
+
+	var lms = iSpring.quiz.LMS.create("1.2", params);
+	lms.initialize(start);
+}));
+		ldr.quizInitEvent().addHandler(function(player){
+			(function(player){
+	var lms = iSpring.quiz.LMS.instance();
+	lms.start(player);
+
+	window.onunload = window.onbeforeunload = function()
+	{
+		lms.closeLms();
+	};
+})(player);
+		});
+		ldr.load("data/movie.swf", "html5.html", "10.1.0", 720, 540);
+	})();
+</script>
+</body>
+</html>
