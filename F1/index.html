@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Video.js Demo - CX</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://vjs.zencdn.net/5.11.8/video-js.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1>Video</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores recusandae mollitia incidunt quo perspiciatis aliquid <a href="/some-page">doloremque esse</a>, in dolore nobis neque, veniam cupiditate, natus dolor id! Est dicta, aliquid reiciendis.</p>
+
+<p>Note: Captions will not work in this demo as they need to be loaded from same origin</p>
+
+<video id="my-video" class="video-js vjs-16-9 vjs-big-play-centered vjs-user-active" controls preload="auto"
+			 poster="https://examples.simplyaccessible.com/video-player/video/hubblecast64.jpg" data-setup='{"fluid": true}' aria-label="Space video">
+	<source src="https://examples.simplyaccessible.com/video-player/video/hubblecast64.mp4" type='video/mp4'>
+	<track kind="captions" srclang="en" label="English" src="https://examples.simplyaccessible.com/video-player/video/captions/hubblecast64.vtt">
+  <track kind="captions" srclang="fr" label="French" src="https://examples.simplyaccessible.com/video-player/video/captions/hubblecast64.vtt">
+	<p class="vjs-no-js">
+		<a href="https://examples.simplyaccessible.com/video-player/video/hubblecast64.mp4">Download video</a>
+	</p>
+</video>
+<!-- partial -->
+  <script src='https://vjs.zencdn.net/5.11.8/video.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

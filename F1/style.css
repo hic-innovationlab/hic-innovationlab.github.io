@@ -1,0 +1,48 @@
+body {
+  max-width: 49em;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.video-js .vjs-control-bar {
+  background: #006564;
+}
+
+@media (min-width: 600px) {
+  .video-js .vjs-control-bar {
+    font-size: 18px;
+  }
+}
+.video-js .vjs-big-play-button:focus {
+  border-width: 3px;
+  background: #006564;
+}
+
+.video-js .vjs-control:focus {
+  border: 1px solid #fff;
+}
+
+.vjs-volume-menu-button-horizontal:focus:before {
+  border: 1px solid #fff;
+}
+
+.vjs-volume-bar:focus .vjs-volume-level:before {
+  border: 1px solid #fff;
+}
+
+.vjs-volume-bar:focus {
+  box-shadow: none;
+}
+
+.vjs-progress-holder:focus .vjs-play-progress:before {
+  border: 1px solid #fff;
+}
+
+.vjs-volume-menu-button-horizontal:focus {
+  border: 0px !important;
+}
+
+.video-js .vjs-slider:focus {
+  outline: 1px solid #fff;
+  box-shadow: none;
+}
